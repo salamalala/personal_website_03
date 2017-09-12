@@ -1,0 +1,16 @@
+<section class="section-contact">
+
+  <h1>contact</h1>
+
+  <ul>
+    {% for contact in site.data.contacts %}
+    <li>
+      <a href="contact.link" class="">
+        {{ contact.name }}
+        {{ contact.username }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+
+</section>

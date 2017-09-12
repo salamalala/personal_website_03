@@ -1,0 +1,15 @@
+- name: Mail
+  link: mailto:hello@ninaregli.com
+  username: hello@ninaregli.com
+
+- name: Linkedin
+  link: https://uk.linkedin.com/in/ninaregli
+  username: Nina Regli
+
+- name: Github
+  link: https://github.com/salamalala
+  username: salamalala
+
+- name: Twitter
+  link: https://twitter.com/NinaRegli
+  username: Nina Regli

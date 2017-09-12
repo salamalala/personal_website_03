@@ -1,0 +1,54 @@
+// Typography
+$base-font: "futura-pt", sans-serif;
+$secondary-font: "letter-gothic-std", sans-serif;
+
+
+// Base Font Sizes for body, changing for different screen sizes
+$body-font-size-sm: 0.88em;
+$body-font-size-base: 1em;
+$body-font-size-md: 0.12em;
+
+// Modular scale for different font headings (the perfect fourth bourbon.io/docs/#modular-scale)
+$modular-scale-base: 1em;
+
+$font-size-sm: modular-scale(-1);
+$font-size-base: modular-scale(0);
+$font-size-md: modular-scale(1);
+$font-size-lg: modular-scale(3);
+$font-size-xl: modular-scale(5);
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+//Letter spacing:
+$letter-spacing-base: 1.04px;
+$letter-spacing-lg: 1.1px;
+
+// Other Sizes
+$base-border-radius: 0;
+$base-z-index: 0;
+
+//Spacing with modular scales
+$spacing-xs: modular-scale(-3);
+$spacing-sm: modular-scale(-1);
+$spacing-base: modular-scale(0);
+$spacing-md: modular-scale(1);
+$spacing-lg: modular-scale(2);
+$spacing-xl: modular-scale(3);
+$spacing-xxl: modular-scale(5);
+
+// Colors
+$dark-grey: #3C4241;
+$turquois: #81C9B4;
+$yellow: #D6CC60;
+$orange: #C78071;
+$white: #FDFDFD;
+$purple: #7D6B93;
+$blue: #7CC2D6;
+
+// Font Colors
+$base-font-color: $white;
+
+// Transitions
+$hover-transition: all 0.1s ease-out;

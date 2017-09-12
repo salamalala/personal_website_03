@@ -1,0 +1,16 @@
+<section class="section-work">
+
+  <h1>work</h1>
+
+  <ul>
+  {% for project in site.data.projects %}
+    <li>
+      <a href="{{ site.baseurl }}">
+        <span>{{ project.type}}</span>
+        {{ project.name }}
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+
+</section>
