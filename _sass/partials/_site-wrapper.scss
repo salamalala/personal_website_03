@@ -1,5 +1,5 @@
-.body-wrapper {
-  margin: 2%;
+.site-wrapper {
+  margin: 3%;
   padding: 5%;
   background-color: $turquois;
   transition: background-color 1.2s;
@@ -17,6 +17,6 @@
   }
 
   &__contact {
-    background-color: $blue;
+    background-color: $yellow;
   }
 }

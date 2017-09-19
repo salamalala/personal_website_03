@@ -409,18 +409,18 @@ a {
 .home__section {
   min-height: 100vh; }
 
-.body-wrapper {
-  margin: 2%;
+.site-wrapper {
+  margin: 3%;
   padding: 5%;
   background-color: #81C9B4;
   transition: background-color 1.2s; }
-  .body-wrapper__work {
+  .site-wrapper__work {
     background-color: #3C4241; }
-  .body-wrapper__services {
+  .site-wrapper__services {
     background-color: #D6CC60; }
-  .body-wrapper__about {
+  .site-wrapper__about {
     background-color: #7D6B93; }
-  .body-wrapper__contact {
-    background-color: #7CC2D6; }
+  .site-wrapper__contact {
+    background-color: #D6CC60; }
 
 /*# sourceMappingURL=main.css.map */

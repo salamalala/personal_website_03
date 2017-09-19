@@ -16,9 +16,9 @@ AnimationBackground.prototype = {
 
     var scene = new ScrollMagic.Scene(args.scene.options);
 
-    scene.setClassToggle("#body-wrapper", classes)
-    scene.addTo(this.controller)
-    scene.addIndicators();
+    scene.setClassToggle("#site-wrapper", classes)
+    scene.addTo(this.controller);
+    // scene.addIndicators();
 
     this.scenes.push(scene);
 
@@ -34,28 +34,29 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   //call instance of AnimationBackground;
     animationBackground
-      .createAnimation("body-wrapper__work", {
+      .createAnimation("site-wrapper__work", {
         scene: {
           options: {
             triggerElement: ".work"
           }
         }
       })
-      .createAnimation("body-wrapper__services", {
+      .createAnimation("site-wrapper__services", {
         scene: {
           options: {
             triggerElement: ".services"
           }
         }
       })
-      .createAnimation("body-wrapper__about", {
+      .createAnimation("site-wrapper__about", {
         scene: {
           options: {
             triggerElement: ".about"
           }
         }
       })
-      .createAnimation("body-wrapper__contact", {
+
+      .createAnimation("site-wrapper__contact", {
         scene: {
           options: {
             triggerElement: ".contact"
