@@ -426,4 +426,20 @@ a {
     text-transform: lowercase;
     padding-left: 1.333em; }
 
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .intro__title {
+    font-size: 13vw; }
+  .intro__wrapper {
+    position: relative;
+    height: 3.5em;
+    width: 400px; }
+  .intro__subtitle {
+    position: absolute;
+    left: 0;
+    top: 0; }
+
 /*# sourceMappingURL=main.css.map */

@@ -1,3 +1,22 @@
 .intro {
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    font-size: 13vw;
+  }
+
+  &__wrapper {
+    position: relative;
+    height: 3.5em;
+    width: 400px;
+  }
+
+  &__subtitle {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 }
