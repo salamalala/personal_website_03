@@ -3,6 +3,13 @@
 
 
 @import "base/variables";
+@import "base/typography";
 
-@import "partials/intro";
+@import "layouts/home";
+
 @import "partials/body-wrapper";
+@import "partials/intro";
+@import "partials/work";
+@import "partials/services";
+@import "partials/about";
+@import "partials/contact";

@@ -1,4 +1,22 @@
 .body-wrapper {
   margin: 2%;
+  padding: 5%;
   background-color: $turquois;
+  transition: background-color 1.2s;
+
+  &__work {
+    background-color: $dark-grey;
+  }
+
+  &__services {
+    background-color: $yellow;
+  }
+
+  &__about {
+    background-color: $purple;
+  }
+
+  &__contact {
+    background-color: $blue;
+  }
 }
