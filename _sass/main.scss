@@ -1,6 +1,7 @@
 // a normalize stylesheet for browser consistency
 @import "normalize";
 
+@import "mixins/modularscale/modularscale";
 
 @import "base/variables";
 @import "base/typography";

@@ -8,14 +8,17 @@ $body-font-size-sm: 0.88em;
 $body-font-size-base: 1em;
 $body-font-size-md: 0.12em;
 
-// Modular scale for different font headings (the perfect fourth bourbon.io/docs/#modular-scale)
-$modular-scale-base: 1em;
+// Modular scale https://github.com/modularscale/modularscale-sass
+$modularscale: (
+  base: 1em,
+  ratio: 1.333
+  //perfect fourth
+);
 
-$font-size-sm: modular-scale(-1);
-$font-size-base: modular-scale(0);
-$font-size-md: modular-scale(1);
-$font-size-lg: modular-scale(3);
-$font-size-xl: modular-scale(5);
+$font-size-sm: ms(-1);
+$font-size-base: ms(0);
+$font-size-md: ms(3);
+$font-size-lg: ms(5);
 
 // Line height
 $base-line-height: 1.5;
@@ -30,13 +33,13 @@ $base-border-radius: 0;
 $base-z-index: 0;
 
 //Spacing with modular scales
-$spacing-xs: modular-scale(-3);
-$spacing-sm: modular-scale(-1);
-$spacing-base: modular-scale(0);
-$spacing-md: modular-scale(1);
-$spacing-lg: modular-scale(2);
-$spacing-xl: modular-scale(3);
-$spacing-xxl: modular-scale(5);
+$spacing-xs: ms(-3);
+$spacing-sm: ms(-1);
+$spacing-base: ms(0);
+$spacing-md: ms(1);
+$spacing-lg: ms(2);
+$spacing-xl: ms(3);
+$spacing-xxl: ms(5);
 
 // Colors
 $dark-grey: #3C4241;

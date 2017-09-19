@@ -1,0 +1,11 @@
+.site-nav {
+  font-family: $secondary-font;
+  display: flex;
+  justify-content: flex-end;
+
+  &__link {
+    color: $white;
+    text-transform: lowercase;
+    padding-left: $spacing-md;
+  }
+}
