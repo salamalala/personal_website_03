@@ -1,15 +1,15 @@
-- name: Mail
+- type: Mail
   link: mailto:hello@ninaregli.com
   username: hello@ninaregli.com
 
-- name: Linkedin
+- type: Linkedin
   link: https://uk.linkedin.com/in/ninaregli
   username: Nina Regli
 
-- name: Github
+- type: Github
   link: https://github.com/salamalala
   username: salamalala
 
-- name: Twitter
+- type: Twitter
   link: https://twitter.com/NinaRegli
   username: Nina Regli

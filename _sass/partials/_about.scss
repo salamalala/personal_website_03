@@ -1,3 +1,6 @@
 .about {
-  
+  &__header {
+    color: $yellow;
+    font-family: $secondary-font;
+  }
 }

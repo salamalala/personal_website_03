@@ -2,11 +2,11 @@
 
   <h1 class="home-section__title">services</h1>
 
-  <dl>
+  <dl class="services__list">
     {% for service in site.data.services %}
-    <dt>{{ service.type }}</dt>
-    <dd>
-      {{ service.text }}
+    <dt class="services__type">{{ service.type }}</dt>
+    <dd class="services__description">
+      {{ service.description }}
     </dd>
     {% endfor %}
   </dl>

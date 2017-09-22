@@ -1,27 +1,27 @@
 - name: GSoA
   url: gsoa
-  type: Design / Development
+  type: Design | Development
 
 - name: Glaubenssache Online
   url: glaubenssache-online
-  type: Branding / Design / Development
+  type: Branding | Design | Development
 
 - name: Wide-Switzerland
   url: wide-switzerland
-  type: Design / Development
+  type: Design | Development
 
 - name: Berner Beratungsstelle für Sans-Papiers
   url: sanspapiersbern
-  type: Design / Development
+  type: Design | Development
 
 - name: Brick Image
   url: brickimage
-  type: Design / Development
+  type: Design | Development
 
 - name: Ahoi Mate
   url: ahoimate
-  type: Branding / Design / Development
+  type: Branding | Design | Development
 
 - name: Annick Emmenegger Brunner
   url: annick-emmenegger-brunner
-  type: Branding / Design / Development
+  type: Branding | Design | Development

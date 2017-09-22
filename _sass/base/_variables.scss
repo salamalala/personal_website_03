@@ -33,7 +33,7 @@ $base-border-radius: 0;
 $base-z-index: 0;
 
 //Spacing with modular scales
-$spacing-xs: ms(-3);
+$spacing-xs: ms(-2);
 $spacing-sm: ms(-1);
 $spacing-base: ms(0);
 $spacing-md: ms(1);
@@ -43,12 +43,18 @@ $spacing-xxl: ms(5);
 
 // Colors
 $dark-grey: #3C4241;
+$light-grey: #7A8C87;
 $turquois: #81C9B4;
 $yellow: #D6CC60;
+$yellow: #C9BB81;
 $orange: #C78071;
+// $orange: #BF8D80;
 $white: #FDFDFD;
 $purple: #7D6B93;
+$purple: #AD99CF;
+$purple: #A786AD;
 $blue: #7CC2D6;
+$blue: #84C3CF;
 
 // Font Colors
 $base-font-color: $white;

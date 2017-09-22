@@ -1,11 +1,11 @@
 .site-wrapper {
   margin: 3%;
-  padding: 5%;
+  padding: 4%;
   background-color: $turquois;
   transition: background-color 1.2s;
 
   &__work {
-    background-color: $dark-grey;
+    background-color: $light-grey;
   }
 
   &__services {
@@ -17,6 +17,6 @@
   }
 
   &__contact {
-    background-color: $yellow;
+    background-color: $blue;
   }
 }

@@ -2,12 +2,12 @@
 
   <h1 class="home-section__title">work</h1>
 
-  <ul>
+  <ul class="work__list">
   {% for project in site.data.projects %}
-    <li>
+    <li class="work__item">
       <a href="{{ site.baseurl }}">
-        <span>{{ project.type}}</span>
-        {{ project.name }}
+        <span class="work__type">{{ project.type}}</span>
+        <span class="work__name">{{ project.name }}</span>
       </a>
     </li>
   {% endfor %}

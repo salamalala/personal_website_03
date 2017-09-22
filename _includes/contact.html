@@ -2,12 +2,12 @@
 
   <h1 class="home-section__title">contact</h1>
 
-  <ul>
+  <ul class="contact__list">
     {% for contact in site.data.contacts %}
-    <li>
-      <a href="contact.link" class="">
-        {{ contact.name }}
-        {{ contact.username }}
+    <li class="contact__item">
+      <a href="{{contact.link}}" class="">
+        <span class="contact__type">{{ contact.type }}</span>
+        <span class="contact__username">{{ contact.username }}</span>
       </a>
     </li>
     {% endfor %}
