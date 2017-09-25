@@ -3,6 +3,7 @@
   padding: 4%;
   background-color: $turquois;
   transition: background-color 1.2s;
+  overflow: hidden;
 
   &__work {
     background-color: $light-grey;

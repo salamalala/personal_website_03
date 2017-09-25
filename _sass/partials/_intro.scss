@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   &__title {
     font-size: 13vw;
@@ -43,7 +44,7 @@
     }
 
     &__light {
-      background-color: $orange;
+      background-color: $yellow;
       z-index: 2;
     }
   }
