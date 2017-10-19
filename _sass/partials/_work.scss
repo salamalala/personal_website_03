@@ -11,11 +11,62 @@
   }
 
   &__item {
-      list-style: none;
-      margin-bottom: $spacing-xl;
+    list-style: none;
+    display: inline-block;
+    margin-bottom: $spacing-xl;
+    //in order to get hover stripe to the left;
+    margin-left: -5%;
+  }
+
+  &__link {
+    display: inline-block;
+    position: relative;
+    padding-top: $spacing-base;
+    padding-bottom: $spacing-base;
+    padding-right: 3%;
+    padding-left: 4%;
+    z-index: 1;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      z-index: 2;
+      height: 100%;
+      background-color: transparentize($purple, 0.3);
+      transition: all 0.2s ease-out;
+    }
+
+    &:hover:after {
+      width: 100%;
+    }
+
+    &:hover .work__type {
+      color: $white;
+    }
+
+    &:hover .work__name {
+      color: $dark-grey;
+    }
+
+    &:hover .work__img {
+      opacity: 1;
+      transform: translateY(-50%);
+      animation-play-state: running;
+    }
+  }
+
+  &__text {
+    transition: all 0.2s ease-out;
+    z-index: 3;
+    position: relative;
   }
 
   &__type {
+    margin-bottom: $spacing-xl;
     text-transform: uppercase;
     font-size: $font-size-sm;
     font-family: $secondary-font;
@@ -27,5 +78,21 @@
     display: block;
     font-weight: 700;
     font-size: $font-size-md;
+    transition: all 0.2s ease-out 0.2;
+    letter-spacing: $letter-spacing-xl;
+  }
+
+  &__img {
+    position: absolute;
+    right: -200px;
+    top: 50%;
+    transform: translateY(-55%);
+    width: 200px;
+    mix-blend-mode: color;
+    width: 300px;
+    filter: saturate(65%);
+    border: $dark-grey solid 5px;
+    opacity: 0;
+    transition: all 0.1s ease-out 0.2s;
   }
 }
