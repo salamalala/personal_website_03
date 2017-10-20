@@ -15,13 +15,21 @@ h3 {
 }
 
 h1 {
-  font-size: $font-size-xl;
+  font-size: $font-size-lg;
   font-weight: 700;
+
+  @media #{$screen-md} {
+    font-size: $font-size-xl;
+  }
 }
 
 h2 {
-  font-size: $font-size-lg;
+  font-size: $font-size-md;
   font-weight: 500;
+
+  @media #{$screen-md} {
+    font-size: $font-size-lg;
+  }
 }
 
 h3 {

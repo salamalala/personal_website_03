@@ -41,7 +41,14 @@ $spacing-base: ms(0);
 $spacing-md: ms(1);
 $spacing-lg: ms(2);
 $spacing-xl: ms(3);
-$spacing-xxl: ms(5);
+$spacing-xxl: ms(8);
+
+//Media queries
+$screen-xs: "(min-width: 20em)";
+$screen-sm: "(min-width: 37.5em)";
+$screen-md: "(min-width: 48em)";
+$screen-lg: "(min-width: 68.75em)";
+$screen-xl: "(min-width: 81.25em)";
 
 // Colors
 $dark-grey: #3C4241;

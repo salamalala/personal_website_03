@@ -5,16 +5,25 @@
   position: relative;
 
   &__title {
-    font-size: 9vw;
-    margin-bottom: $spacing-xs;
+    font-size: 12vw;
+
+    @media #{$screen-md} {
+      font-size: 9vw;
+    }
   }
 
   &__wrapper {
     position: relative;
     align-self: center;
-    height: 4em;
-    width: 55%;
+    height: 2em;
+    margin-top: $spacing-lg;
+    width: 100%;
     overflow: hidden;
+
+    @media #{$screen-md} {
+      width: 55%;
+      height: 4em;
+    }
   }
 
   &__subtitle {
@@ -24,8 +33,12 @@
     width: 100%;
     text-align: center;
     font-family: $secondary-font;
-    font-size: $font-size-md;
     opacity: 0;
+    font-size: 5vw;
+
+    @media #{$screen-md} {
+      font-size: 3.5vw;
+    }
   }
 
   &__reveal-block {

@@ -1,9 +1,19 @@
 .site-wrapper {
-  margin: 2em;
-  padding: 3em 4em;
+  margin: 1em;
+  padding: 1em;
   background-color: $turquois;
   transition: background-color 1.2s;
   overflow: hidden;
+
+  @media #{$screen-md} {
+    margin: 1.5em;
+    padding: 2em 2.5em;
+  }
+
+  @media #{$screen-lg} {
+    margin: 2em;
+    padding: 3em 4em;
+  }
 
   &__work {
     background-color: $light-grey;

@@ -10,13 +10,20 @@
 }
 
 .nav {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+
   &__link {
     color: $white;
     text-transform: lowercase;
-    margin-left: $spacing-lg;
-    padding: 0 $spacing-xs;
     position: relative;
     transition: all 0.4s ease-out;
+
+    @media #{$screen-md} {
+      padding: 0 $spacing-xs;
+      margin-left: $spacing-lg;
+    }
 
     &:after {
       content: '';
@@ -30,11 +37,9 @@
       transition: all 0.2s ease-out;
     }
 
-    &:hover {
-      &:after {
-        height: 5px;
-        opacity: 1;
-      }
+    &:hover:after {
+      height: 5px;
+      opacity: 1;
     }
   }
 }

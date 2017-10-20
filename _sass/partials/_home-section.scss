@@ -1,9 +1,17 @@
 .home-section {
-    min-height: calc(100vh - 5em);
+  min-height: calc(100vh - 5em);
+  margin-bottom: $spacing-base;
 
-    &__title {
-      text-align: right;
+  @media #{$screen-md} {
+    margin-bottom: $spacing-md;
+  }
+
+  &__title {
+    text-align: right;
+    margin-bottom: $spacing-sm;
+
+    @media #{$screen-md} {
       margin-bottom: $spacing-base;
-      margin-top: $spacing-md;
     }
+  }
 }
