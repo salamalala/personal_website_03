@@ -29,7 +29,7 @@ AnimationBackground.prototype = {
 var animationBackground = new AnimationBackground();
 
 var tl = new TimelineMax({repeat:-1}),
-    blockDuration = 0.4,
+    blockDuration = 0.3,
     blackBlockDelay = "+=2",
     orangeBlockDelay = "+=0.1",
     orangeBlockMovingDelay = "+=0.3",

@@ -5,10 +5,10 @@
   <ul class="work__list">
   {% for project in site.data.projects %}
     <li class="work__item">
-      <a class="work__link" href="{{ site.baseurl }}">
+      <a class="work__link" href="{{ project.url }}" target="_blank">
         <span class="work__type work__text">{{ project.type }}</span>
         <span class="work__name work__text">{{ project.name }}</span>
-        <img class="work__img" src="assets/img/{{ project.img }}" alt="{{ project.name }}">
+        <div class="work__img-wrapper"><img class="work__img" src="assets/img/{{ project.img }}" alt="{{ project.name }}"></div>
       </a>
 
     </li>

@@ -1,29 +1,29 @@
 - name: GSoA
-  url: gsoa
+  url: gsoa.ch
   type: Design | Development
   img: gsoa_sm.jpg
 
 - name: Glaubenssache Online
-  url: glaubenssache-online
+  url: glaubenssache-online.ch
   type: Branding | Design | Development
   img: glaubenssache_sm.jpg
 
 - name: Wide-Switzerland
-  url: wide-switzerland
+  url: wide-switzerland.ch
   type: Design | Development
   img: wide_sm.jpg
 
 - name: Berner Beratungsstelle für Sans-Papiers
-  url: sanspapiersbern
+  url: sanspapiersbern.ch
   type: Design | Development
   img: sanspapier_sm.jpg
 
 - name: Brick Image
-  url: brickimage
+  url: brickimage.co.uk
   type: Design | Development
   img: brick_image_sm.jpg
 
 - name: Annick Emmenegger Brunner
-  url: annick-emmenegger-brunner
+  url: annick-emmenegger-brunner.ch
   type: Branding | Design | Development
   img: emmenegger_sm.jpg
