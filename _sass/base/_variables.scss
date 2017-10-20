@@ -17,8 +17,9 @@ $modularscale: (
 
 $font-size-sm: ms(-1);
 $font-size-base: ms(0);
-$font-size-md: ms(4);
-$font-size-lg: ms(5);
+$font-size-md: ms(2);
+$font-size-lg: ms(4);
+$font-size-xl: ms(5);
 
 // Line height
 $base-line-height: 1.5;
@@ -44,21 +45,17 @@ $spacing-xxl: ms(5);
 
 // Colors
 $dark-grey: #3C4241;
-$light-grey: #7A8C87;
-$light-grey: #596662;
-$turquois: #81C9B4;
-$yellow: #D6CC60;
-$yellow: #C9BB81;
-$yellow-strong: saturate($yellow, 50%);
-$orange: #C78071;
-// $orange: #BF8D80;
 $white: #FDFDFD;
-$purple: #7D6B93;
-$purple: #AD99CF;
+
+$turquois: #81C9B4;
+$light-grey: #596662;
+$yellow: #D6C17A;
 $purple: #A786AD;
-$blue: #7CC2D6;
 $blue: #84C3CF;
-$dark-blue: #5B55CF;
+
+$yellow-strong: saturate($yellow, 50%);
+$purple-strong: #5B55CF;
+$pink-strong: #D9688A;
 
 // Font Colors
 $base-font-color: $white;

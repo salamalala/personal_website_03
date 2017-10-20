@@ -3,7 +3,7 @@
   flex-direction: column;
 
   &__title {
-    color: $dark-blue;
+    color: $purple-strong;
   }
 
   &__list {
@@ -17,9 +17,9 @@
 
   &__type {
     font-family: $secondary-font;
-    font-size: $font-size-md;
+    font-size: $font-size-lg;
     text-transform: uppercase;
-    color: $dark-blue;
+    color: $purple-strong;
   }
 
   &__description {

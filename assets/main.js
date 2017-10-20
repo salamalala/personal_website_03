@@ -31,7 +31,7 @@ var animationBackground = new AnimationBackground();
 var tl = new TimelineMax({repeat:-1}),
     blockDuration = 0.4,
     blackBlockDelay = "+=2",
-    orangeBlockDelay = "+=0.4",
+    orangeBlockDelay = "+=0.1",
     orangeBlockMovingDelay = "+=0.3",
     textDelay = "-=0.3",
     textDuration = 0.8,

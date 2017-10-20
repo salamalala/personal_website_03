@@ -55,7 +55,6 @@
     &:hover .work__img {
       opacity: 1;
       transform: translateY(-50%);
-      animation-play-state: running;
     }
   }
 
@@ -77,18 +76,16 @@
   &__name {
     display: block;
     font-weight: 700;
-    font-size: $font-size-md;
+    font-size: $font-size-lg;
     transition: all 0.2s ease-out 0.2;
     letter-spacing: $letter-spacing-xl;
   }
 
   &__img {
     position: absolute;
-    right: -200px;
+    right: -10%;
     top: 50%;
     transform: translateY(-55%);
-    width: 200px;
-    mix-blend-mode: color;
     width: 300px;
     filter: saturate(65%);
     border: $dark-grey solid 5px;

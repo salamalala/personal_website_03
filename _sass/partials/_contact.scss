@@ -14,16 +14,28 @@
     list-style: none;
     display: block;
     text-align: center;
+    position: relative;
   }
 
-  &__type {
-    font-family:$secondary-font;
-    letter-spacing: $letter-spacing-lg;
-    color: $dark-grey;
+  &__link:hover .contact__type {
+    color: $pink-strong;
   }
 
   &__username {
-    font-size: $font-size-lg;
+    font-family:$secondary-font;
+    letter-spacing: $letter-spacing-lg;
+    color: $dark-grey;
+    background-color: transparentize($yellow, 0.4);
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  &__type {
+    font-size: $font-size-xl;
     display: block;
+    text-transform: uppercase;
   }
 }
