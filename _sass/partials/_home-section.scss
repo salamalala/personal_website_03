@@ -1,9 +1,18 @@
 .home-section {
   min-height: calc(100vh - 5em);
   margin-bottom: $spacing-base;
+  padding-left: 1em;
+  padding-right: 1em;
 
   @media #{$screen-md} {
     margin-bottom: $spacing-md;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+
+  @media #{$screen-lg} {
+    padding-left: 4em;
+    padding-right: 4em;
   }
 
   &__title {
