@@ -563,7 +563,9 @@ a {
     margin-left: -4em;
     margin-right: -4em; }
   .work__link {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
     z-index: 1;
     padding-top: 2.368593037em;
@@ -576,21 +578,25 @@ a {
       top: 0;
       left: 0;
       width: 0;
-      z-index: 2;
+      z-index: -1;
       height: 100%;
       background: linear-gradient(45deg, rgba(167, 134, 173, 0.7), rgba(116, 133, 127, 0.7));
       transition: all 0.2s ease-out; }
     .work__link:hover:after {
       width: 100%; }
     .work__link:hover .work__type {
-      color: #FDFDFD; }
+      color: #FDFDFD;
+      transform: translateX(30px); }
     .work__link:hover .work__name {
-      color: #3C4241; }
+      color: #3C4241;
+      transform: translateX(-10px); }
     .work__link:hover .work__img,
     .work__link:hover .work__img-wrapper {
       opacity: 1; }
     .work__link:hover .work__img-wrapper {
-      transform: translateY(-50%); }
+      animation: bounceInRight 1s forwards; }
+    .work__link:hover .work__img {
+      animation: moveScreen linear 7s forwards 1s; }
   .work__text {
     transition: all 0.2s ease-out;
     z-index: 3;
@@ -606,31 +612,43 @@ a {
     display: block;
     font-weight: 700;
     font-size: 3.1573345183em;
-    transition: all 0.2s ease-out 0.2;
     letter-spacing: 2px; }
   .work__img-wrapper {
     position: absolute;
     right: 1em;
-    top: 50%;
+    height: 170px;
     width: 300px;
-    height: 167px;
+    border: solid #3C4241 5px;
     opacity: 0;
-    transition: all 0.1s ease-out 0.2s;
     overflow: hidden; }
   .work__img {
     width: 300px;
-    border: solid #FDFDFD 5px;
     opacity: 0;
     transition: all 0.1s ease-out 0.2s;
     position: absolute;
-    z-index: 1;
-    animation: moveScreen linear 10s; }
+    z-index: 1; }
 
 @keyframes moveScreen {
   0% {
     transform: translateY(0); }
   100% {
-    transform: translateY(-100%); } }
+    transform: translateY(calc(-100% + 170px)); } }
+
+@keyframes bounceInRight {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  from {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0); }
+  60% {
+    opacity: 1;
+    transform: translate3d(-15px, 0, 0); }
+  75% {
+    transform: translate3d(5px, 0, 0); }
+  90% {
+    transform: translate3d(-3px, 0, 0); }
+  to {
+    transform: none; } }
 
 .services {
   display: flex;

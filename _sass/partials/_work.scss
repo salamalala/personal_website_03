@@ -17,7 +17,9 @@
   }
 
   &__link {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
     z-index: 1;
     padding-top: $spacing-xl;
@@ -31,7 +33,7 @@
       top: 0;
       left: 0;
       width: 0;
-      z-index: 2;
+      z-index: -1;
       height: 100%;
       background: linear-gradient(45deg, transparentize($purple, 0.3), transparentize($light-grey, 0.3));
       transition: all 0.2s ease-out;
@@ -43,10 +45,12 @@
 
     &:hover .work__type {
       color: $white;
+      transform: translateX(30px);
     }
 
     &:hover .work__name {
       color: $dark-grey;
+      transform: translateX(-10px);
     }
 
     &:hover .work__img,
@@ -55,7 +59,12 @@
     }
 
     &:hover .work__img-wrapper {
-      transform: translateY(-50%);
+      animation: bounceInRight 1s forwards;
+    }
+
+    //get screen image to scroll up
+    &:hover .work__img {
+      animation: moveScreen linear 7s forwards 1s;
     }
   }
 
@@ -78,40 +87,25 @@
     display: block;
     font-weight: 700;
     font-size: $font-size-lg;
-    transition: all 0.2s ease-out 0.2;
     letter-spacing: $letter-spacing-xl;
   }
 
   &__img-wrapper {
     position: absolute;
     right: $spacing-base;
-    top: 50%;
+    height: 170px;
     width: 300px;
-    height: 167px;
+    border: solid $dark-grey 5px;
     opacity: 0;
-    transition: all 0.1s ease-out 0.2s;
     overflow: hidden;
-    
-    // &:after {
-    //   content: '';
-    //   position: absolute;
-    //   display: block;
-    //   width: 100%;
-    //   height: 100%;
-    //   border: solid $white 5px;
-    //   top: 15px;
-    //   left: 15px;
-    // }
   }
 
   &__img {
     width: 300px;
-    border: solid $white 5px;
     opacity: 0;
     transition: all 0.1s ease-out 0.2s;
     position: absolute;
     z-index: 1;
-    animation: moveScreen linear 10s;
   }
 }
 
@@ -120,6 +114,35 @@
    transform: translateY(0);
    }
   100% {
-   transform: translateY(-100%);
+   transform: translateY(calc(-100% + 170px));
+  }
+}
+
+
+@keyframes bounceInRight {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(-15px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  to {
+    transform: none;
   }
 }

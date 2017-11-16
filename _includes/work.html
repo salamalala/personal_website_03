@@ -6,13 +6,14 @@
   {% for project in site.data.projects %}
     <li class="work__item">
       <a class="work__link" href="{{ project.url }}" target="_blank">
-        <span class="work__type work__text">{{ project.type }}</span>
-        <span class="work__name work__text">{{ project.name }}</span>
+        <div class="work__text">
+          <span class="work__type">{{ project.type }}</span>
+          <span class="work__name">{{ project.name }}</span>
+        </div>
         <div class="work__img-wrapper">
           <img class="work__img" src="assets/img/{{ project.img }}" alt="{{ project.name }}">
         </div>
       </a>
-
     </li>
   {% endfor %}
   </ul>

@@ -41,7 +41,6 @@ var tl = new TimelineMax({repeat:-1}),
     ;
 
 tl
-
   /*First set*/
    /* Text 1 appears */
   .fromTo(".subtitle__1", textDuration, {opacity: 0, scale: 0.6, transformOrigin: "100% 0%"}, {opacity: 1, scale: 1, ease: textEase}, textDelay)
@@ -101,9 +100,6 @@ tl
 
 
 
-
-
-
 //js $(document).ready function in js
 document.addEventListener("DOMContentLoaded", function(event) {
 
@@ -138,7 +134,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
           }
         }
       });
-
-
 
 });
