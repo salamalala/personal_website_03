@@ -1,29 +1,35 @@
-- name: GSoA
-  url: gsoa.ch
+- client: GSoA
+  url: http://gsoa.ch
+  technology: Custom WordPress Theme built with HTML5 / Scss / Javascript / PHP
   type: Design | Development
   img: gsoa-fullpage.jpg
 
-- name: Glaubenssache Online
-  url: glaubenssache-online.ch
+- client: Glaubenssache Online
+  url: http://glaubenssache-online.ch
+  technology: Custom WordPress Theme built with HTML5 / Scss / Javascript / PHP
   type: Branding | Design | Development
   img: glaubenssache-fullpage.jpg
 
-- name: Wide-Switzerland
-  url: wide-switzerland.ch
+- client: Wide-Switzerland
+  technology: Custom WordPress Theme built with HTML5 / Scss / Javascript / PHP
+  url: http://wide-switzerland.ch
   type: Design | Development
   img: wide-fullpage.jpg
 
-- name: Berner Beratungsstelle für Sans-Papiers
-  url: sanspapiersbern.ch
+- client: Berner Beratungsstelle für Sans-Papiers
+  technology: Custom WordPress Theme built with HTML5 / Scss / Javascript / PHP
+  url: http://sanspapiersbern.ch
   type: Design | Development
   img: sanspapier-fullpage.jpg
 
-- name: Brick Image
-  url: brickimage.co.uk
+- client: Brick Image
+  technology: Jekyll site built with HTML5 / Scss / Javascript / PHP
+  url: http://brickimage.co.uk
   type: Design | Development
   img: brickimage-fullpage.jpg
 
-- name: Annick Emmenegger Brunner
-  url: annick-emmenegger-brunner.ch
+- client: Annick Emmenegger Brunner
+  technology: Static site built with HTML5 / CSS3
+  url: http://annick-emmenegger-brunner.ch
   type: Branding | Design | Development
   img: emmenegger-fullpage.jpg

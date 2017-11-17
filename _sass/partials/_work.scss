@@ -44,13 +44,20 @@
     }
 
     &:hover .work__type {
+      transform: translateY(0);
+      font-size: $font-size-base;
       color: $white;
-      transform: translateX(30px);
+
     }
 
-    &:hover .work__name {
+    &:hover .work__technology {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    &:hover .work__client {
       color: $dark-grey;
-      transform: translateX(-10px);
+      transform: translateY(0);
     }
 
     &:hover .work__img,
@@ -69,25 +76,52 @@
   }
 
   &__text {
-    transition: all 0.2s ease-out;
+    display: flex;
+    flex-direction: column;
     z-index: 3;
     position: relative;
   }
 
   &__type {
-    margin-bottom: $spacing-xl;
+    transform: translateY($spacing-sm);
     text-transform: uppercase;
     font-size: $font-size-sm;
     font-family: $secondary-font;
     letter-spacing: $letter-spacing-lg;
     color: $yellow-strong;
+    transition: all 0.2s ease-out;
   }
 
-  &__name {
+  &__technology {
+    position: relative;
+    margin-top: 40px;
+    color: $dark-grey;
+    text-transform: uppercase;
+    font-family: $secondary-font;
+    font-size: $font-size-sm;
+    font-weight: 700;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.2s ease-out;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -20px;
+      left: 0;
+      background-color: $white;
+      height: 2px;
+      width: 150px;
+    }
+  }
+
+  &__client {
+    transform: translateY(- $spacing-sm);
     display: block;
     font-weight: 700;
     font-size: $font-size-lg;
     letter-spacing: $letter-spacing-xl;
+    transition: all 0.2s ease-out;
   }
 
   &__img-wrapper {
