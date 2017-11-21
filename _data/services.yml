@@ -1,11 +1,20 @@
-- type: Web Developement
-  description: "I build websites. If you'd like a website you can maintain yourself on a regular basis I can create a custom WordPress Theme for you. I code it you maintain it. If you wish a website which doesn't need a lot of maintaining I can create a static Jekyll site for you. (Side not to all the techie ones: My strength is in Front-End, so HTML5, CSS3, Sass and Javasript. But I also don't faint using PHP code or Ruby.)"
+- number: "01"
+  type: Web Developement
+  description: "I build websites, mainly custom WordPress themes if you wish to edit and publish content yourself or Jekyll themes if you have static content.
+  My focus is on Front-End, HTML5, CSS3, Sass and Javasript. But I also don't faint using PHP or Ruby."
 
-- type: Web Design
-  description: "If you don't have a design for the site yet I can create your Web Presence. We think together about the best possible structure for the site, choose the colors and fonts and based on that I'll design a possible Website for you. Or two. Or three.."
+- number: "02"
+  type: Web Design
+  description: "If you don't have a design for the site yet I can create your Web Presence.
+  We think together about the best possible structure for the site, choose the colors and fonts and based on that I'll design a possible Website for you.
+  Or two. Or three.."
 
-- type: Branding
-  description: "If this is the first public presence or if you're not happy with your current branding I can help you creating a branding for your public presence."
+- number: "03"
+  type: Branding
+  description: "If this is the first public presence or
+  if you're not happy with your current branding I can help you creating a branding for your public presence."
 
-- type: Print Design
-  description: "Not really my main profession however if you have a gig you'd like to promote, a flea market you want to advertise for, anything printed basically I can do the design for you."
+- number: "04"
+  type: Print Design
+  description: "Not really my main profession however if you have a gig you'd like to promote,
+  a flea market you want to advertise for, anything printed basically I can do the design for you."

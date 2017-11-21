@@ -36,41 +36,50 @@
       z-index: -1;
       height: 100%;
       background: linear-gradient(45deg, transparentize($purple, 0.3), transparentize($light-grey, 0.3));
-      transition: all 0.2s ease-out;
+      transition: all 0.4s ease-out;
     }
 
-    &:hover:after {
+    &:hover:after,
+    &:focus:after {
       width: 100%;
     }
 
-    &:hover .work__type {
+    &:hover .work__type,
+    &:focus .work__type {
       transform: translateY(0);
       font-size: $font-size-base;
       color: $white;
 
     }
 
-    &:hover .work__technology {
-      opacity: 1;
+    &:hover .work__technology,
+    &:focus .work__technology {
       transform: translateX(0);
     }
 
-    &:hover .work__client {
+    &:hover .work__client,
+    &:focus .work__client {
       color: $dark-grey;
       transform: translateY(0);
     }
 
     &:hover .work__img,
-    &:hover .work__img-wrapper {
+    &:hover .work__img-wrapper,
+    &:hover .work__technology,
+    &:focus .work__img,
+    &:focus .work__img-wrapper,
+    &:focus .work__technology {
       opacity: 1;
     }
 
-    &:hover .work__img-wrapper {
+    &:hover .work__img-wrapper, 
+    &:focus .work__img-wrapper {
       animation: bounceInRight 1s forwards;
     }
 
     //get screen image to scroll up
-    &:hover .work__img {
+    &:hover .work__img,
+    &:focus .work__img {
       animation: moveScreen linear 7s forwards 1s;
     }
   }
@@ -89,7 +98,7 @@
     font-family: $secondary-font;
     letter-spacing: $letter-spacing-lg;
     color: $yellow-strong;
-    transition: all 0.2s ease-out;
+    transition: all 0.4s ease-out;
   }
 
   &__technology {
@@ -102,16 +111,16 @@
     font-weight: 700;
     opacity: 0;
     transform: translateX(20px);
-    transition: all 0.2s ease-out;
+    transition: all 0.4s ease-out;
 
     &:before {
       content: '';
       position: absolute;
       top: -20px;
-      left: 0;
+      left: 10px;
       background-color: $white;
-      height: 2px;
-      width: 150px;
+      height: 1px;
+      width: 200px;
     }
   }
 
@@ -121,7 +130,7 @@
     font-weight: 700;
     font-size: $font-size-lg;
     letter-spacing: $letter-spacing-xl;
-    transition: all 0.2s ease-out;
+    transition: all 0.4s ease-out;
   }
 
   &__img-wrapper {
@@ -137,7 +146,7 @@
   &__img {
     width: 300px;
     opacity: 0;
-    transition: all 0.1s ease-out 0.2s;
+    transition: all 0.1s ease-out 0.4s;
     position: absolute;
     z-index: 1;
   }

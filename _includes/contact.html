@@ -2,18 +2,20 @@
 
   <h1 class="home-section__title">contact</h1>
 
-  <h2> I'm always interested
-  in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+  <div class="contact__wrapper">
 
-  <ul class="contact__list">
-    {% for contact in site.data.contacts %}
-    <li class="contact__item">
-      <a href="{{contact.link}}" class="contact__link" target="_blank">
-        <span class="contact__username">{{ contact.username }}</span>
-        <span class="contact__type">{{ contact.type }}</span>
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
+    <h2> I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+    <ul class="contact__list">
+      {% for contact in site.data.contacts %}
+      <li class="contact__item">
+        <a href="{{contact.link}}" class="contact__link" target="_blank">
+          <span class="contact__username">{{ contact.username }}</span>
+          <span class="contact__type">{{ contact.type }}</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+
+  </div>
 
 </section>

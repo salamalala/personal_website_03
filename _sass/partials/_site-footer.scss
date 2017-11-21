@@ -7,4 +7,13 @@
   padding: $spacing-xs $spacing-md;
   font-size: $font-size-sm;
   text-align: center;
+  margin: 1em;
+
+  @media #{$screen-md} {
+    margin: 2em 2.5em;
+  }
+
+  @media #{$screen-lg} {
+    margin: 3em 4em;
+  }
 }
