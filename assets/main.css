@@ -649,7 +649,7 @@ a {
       top: -20px;
       left: 10px;
       background-color: #FDFDFD;
-      height: 1px;
+      height: 2px;
       width: 200px; }
   .work__client {
     transform: translateY(-0.7501875469em);
@@ -707,8 +707,8 @@ a {
     display: flex;
     justify-content: space-between; }
   .services__list-item {
-    width: 21%;
-    max-width: 21%;
+    width: 29%;
+    max-width: 29%;
     display: flex;
     flex-direction: column; }
   .services__number {
@@ -759,9 +759,13 @@ a {
   display: flex;
   flex-direction: column; }
   .contact__wrapper {
-    display: flex; }
+    display: flex;
+    justify-content: space-between; }
+  .contact__msg {
+    width: 55%;
+    text-align: center; }
   .contact__list {
-    flex-grow: 2;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -771,23 +775,30 @@ a {
     display: block;
     text-align: center;
     position: relative; }
+  .contact__link:hover .contact__username {
+    background-color: #3C4241;
+    color: rgba(214, 193, 122, 0); }
   .contact__link:hover .contact__type {
-    color: #D9688A; }
+    color: #D9688A;
+    z-index: 5; }
   .contact__username {
-    font-family: "letter-gothic-std", sans-serif;
-    letter-spacing: 1.1px;
-    color: #3C4241;
-    background-color: rgba(214, 193, 122, 0.6);
-    align-self: center;
     position: absolute;
     top: 50%;
     width: 100%;
     left: 0;
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    z-index: 2;
+    letter-spacing: 1.1px;
+    color: #D6C17A;
+    background-color: rgba(60, 66, 65, 0.6);
+    transition: all 0.1s ease-out; }
   .contact__type {
-    font-size: 2.368593037em;
+    position: relative;
+    font-family: "letter-gothic-std", sans-serif;
+    font-size: 3.1573345183em;
     display: block;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    transition: all 0.1s ease-out; }
 
 @screen (min-width: 48em) {
   .contact__type {

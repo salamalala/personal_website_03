@@ -4,10 +4,16 @@
 
   &__wrapper {
     display: flex;
+    justify-content: space-between;
+  }
+
+  &__msg {
+    width: 55%;
+    text-align: center;
   }
 
   &__list {
-    flex-grow: 2;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -21,27 +27,38 @@
     position: relative;
   }
 
-  &__link:hover .contact__type {
-    color: $pink-strong;
+  &__link:hover {
+
+    .contact__username {
+      background-color: $dark-grey;
+      color: transparentize($yellow, 1);
+    }
+    .contact__type {
+      color: $pink-strong;
+      z-index: 5;
+    }
   }
 
   &__username {
-    font-family: $secondary-font;
-    letter-spacing: $letter-spacing-lg;
-    color: $dark-grey;
-    background-color: transparentize($yellow, 0.4);
-    align-self: center;
     position: absolute;
     top: 50%;
     width: 100%;
     left: 0;
     transform: translateY(-50%);
+    z-index: 2;
+    letter-spacing: $letter-spacing-lg;
+    color: $yellow;
+    background-color: transparentize($dark-grey, 0.4);
+    transition: $hover-transition;
   }
 
   &__type {
-    font-size: $font-size-md;
+    position: relative;
+    font-family: $secondary-font;
+    font-size: $font-size-lg;
     display: block;
     text-transform: uppercase;
+    transition: $hover-transition;
 
     @screen #{$screen-md} {
       font-size: $font-size-xl;

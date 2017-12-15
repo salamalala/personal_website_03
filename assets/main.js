@@ -51,14 +51,14 @@ tl
   /* Text 1 disappears */
   .set(".subtitle__1", {opacity: 0})
 
-  /* Orange block appears */
-  .to(".intro__reveal-block__light", blockDuration, { ease: blockRevealEase, left: 0}, orangeBlockDelay)
-  //
-  /*Black block width shrinks down to 0px */
-  .set(".intro__reveal-block__dark", { left: '-100%'}, "+=0")
-  //
-  // /*Orange block disappears */
-  .to(".intro__reveal-block__light", blockDuration, {ease: blockDisappearsEase, xPercent: 110}, orangeBlockMovingDelay)
+  // /* Orange block appears */
+  // .to(".intro__reveal-block__light", blockDuration, { ease: blockRevealEase, left: 0}, orangeBlockDelay)
+  // //
+  // /*Black block width shrinks down to 0px */
+  // .set(".intro__reveal-block__dark", { left: '-100%'}, "+=0")
+  // //
+  // // /*Orange block disappears */
+  // .to(".intro__reveal-block__light", blockDuration, {ease: blockDisappearsEase, xPercent: 110}, orangeBlockMovingDelay)
 
   // /* Text 2 appears */
   .fromTo(".subtitle__2", textDuration, {opacity: 0, scale: 0.6, transformOrigin: "100% 0%"}, {opacity: 1, scale: 1, ease: textEase}, textDelay)
@@ -68,16 +68,16 @@ tl
   //
   .set(".subtitle__2", {opacity: 0})
   //
-  // /*Orange block goes underneath black box */
-  .set(".intro__reveal-block__light", {zIndex: -1, left: '-100%', xPercent: 0})
+  // // /*Orange block goes underneath black box */
+  // .set(".intro__reveal-block__light", {zIndex: -1, left: '-100%', xPercent: 0})
   //
   // /*Orange block appears/
-  .to(".intro__reveal-block__light", blockDuration, { ease: blockRevealEase, left: 0, zIndex: 2}, orangeBlockDelay)
-  //
-  .set(".intro__reveal-block__dark", { left: '-100%'})
+  // .to(".intro__reveal-block__light", blockDuration, { ease: blockRevealEase, left: 0, zIndex: 2}, orangeBlockDelay)
+  // //
+  // .set(".intro__reveal-block__dark", { left: '-100%'})
 
-  // /*Orange block disappears */
-  .to(".intro__reveal-block__light", blockDuration, {ease: blockDisappearsEase, xPercent: 110}, orangeBlockMovingDelay)
+  // // /*Orange block disappears */
+  // .to(".intro__reveal-block__light", blockDuration, {ease: blockDisappearsEase, xPercent: 110}, orangeBlockMovingDelay)
   //
   /* Text 3 appears */
   .fromTo(".subtitle__3", textDuration, {opacity: 0,scale: 0.6, transformOrigin: "100% 0%"}, {opacity: 1, scale: 1, ease: textEase}, textDelay)
@@ -88,15 +88,15 @@ tl
   .set(".subtitle__3",  {opacity: 0})
   //
   /*Orange block goes underneath black box */
-  .set(".intro__reveal-block__light", {zIndex: -1, left: '-100%', xPercent: 0})
-
-  // /*Orange block appears/
-  .to(".intro__reveal-block__light", blockDuration, { ease: blockRevealEase, left: 0, zIndex: 2}, orangeBlockDelay)
+  // .set(".intro__reveal-block__light", {zIndex: -1, left: '-100%', xPercent: 0})
+  //
+  // // /*Orange block appears/
+  // .to(".intro__reveal-block__light", blockDuration, { ease: blockRevealEase, left: 0, zIndex: 2}, orangeBlockDelay)
 
   .set(".intro__reveal-block__dark", { width: 0})
 
     // /*Orange block disappears */
-  .to(".intro__reveal-block__light", blockDuration, {ease: blockDisappearsEase, xPercent: 100}, orangeBlockMovingDelay);
+  // .to(".intro__reveal-block__light", blockDuration, {ease: blockDisappearsEase, xPercent: 100}, orangeBlockMovingDelay);
 
 
 

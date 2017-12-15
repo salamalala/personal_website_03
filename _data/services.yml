@@ -10,11 +10,5 @@
   Or two. Or three.."
 
 - number: "03"
-  type: Branding
-  description: "If this is the first public presence or
-  if you're not happy with your current branding I can help you creating a branding for your public presence."
-
-- number: "04"
-  type: Print Design
-  description: "Not really my main profession however if you have a gig you'd like to promote,
-  a flea market you want to advertise for, anything printed basically I can do the design for you."
+  type: Branding / Print Design
+  description: "Although digital design is where I spend the majority of my time, I also have experience with branding and identity; print design "
