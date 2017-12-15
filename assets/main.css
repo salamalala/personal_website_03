@@ -379,7 +379,8 @@ body {
 h1,
 h2,
 h3 {
-  margin: 0; }
+  margin: 0;
+  line-height: 1.2; }
 
 h1 {
   font-size: 3.1573345183em;
@@ -523,14 +524,14 @@ a {
   .intro__wrapper {
     position: relative;
     align-self: center;
-    height: 2em;
+    height: 2.5em;
     margin-top: 1.776889em;
     width: 100%;
     overflow: hidden; }
     @media (min-width: 48em) {
       .intro__wrapper {
         width: 55%;
-        height: 4em; } }
+        height: 5em; } }
   .intro__subtitle {
     position: absolute;
     top: 50%;
@@ -543,6 +544,8 @@ a {
     @media (min-width: 48em) {
       .intro__subtitle {
         font-size: 3.5vw; } }
+  .intro .subtitle__1 {
+    opacity: 1; }
   .intro__reveal-block {
     position: absolute;
     left: -100%;
@@ -551,13 +554,8 @@ a {
     bottom: 0;
     width: 100%;
     height: 100%;
-    opacity: 1; }
-    .intro__reveal-block__dark {
-      background-color: #3C4241;
-      z-index: 1; }
-    .intro__reveal-block__light {
-      background-color: #D6C17A;
-      z-index: 2; }
+    opacity: 1;
+    background-color: #738290; }
 
 .work {
   display: flex;
