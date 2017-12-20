@@ -90,14 +90,6 @@ var smoothScrolling = function (){
 
 
 
-
-
-
-
-
-
-
-
 // Intro block revealer effect
 
 
@@ -106,10 +98,10 @@ var tl = new TimelineMax({repeat: -1}),
     blockAppearingDelay = "+=2",
     blockMovingDelay = "+=0.3",
     textDelay = "-=0.2",
-    textDuration = 0.2,
+    textDuration = 0.1,
     textEase = Expo.easeOut,
     blockRevealEase = Power1.easeIn,
-    blockDisappearsEase = Power1.easeIn,
+    blockDisappearsEase = Power1.easeOut,
     subtitle1 = ".subtitle__1",
     subtitle2 = ".subtitle__2",
     subtitle3 = ".subtitle__3",
@@ -118,7 +110,7 @@ var tl = new TimelineMax({repeat: -1}),
 
 tl
    /* Text 1 appears */
-  .fromTo(subtitle1, textDuration, {opacity: 0, yPercent: -200 }, {opacity: 1, yPercent: 0, ease: Power1.easeOut}, textDelay)
+  .fromTo(subtitle1, textDuration, {opacity: 0 }, {opacity: 1, ease: Power1.easeOut}, textDelay)
   //
   /*Black block appears */
   .to(revealBlock, blockDuration, { ease: blockRevealEase, left: 0}, blockAppearingDelay)
@@ -133,7 +125,7 @@ tl
   .set(revealBlock, { xPercent: -100})
 
   // /* Text 2 appears */
-  .fromTo(subtitle2, textDuration, {opacity: 0, yPercent: 0 }, {opacity: 1, yPercent: 0, ease: Power1.easeOut}, textDelay)
+  .fromTo(subtitle2, textDuration, {opacity: 0}, {opacity: 1, ease: Power1.easeOut}, textDelay)
 
   /*Black block appears */
   .to(revealBlock, blockDuration, { ease: blockRevealEase, left: 0, xPercent: 0}, blockAppearingDelay)
@@ -148,7 +140,7 @@ tl
   .set(revealBlock, { xPercent: -100})
 
   // /* Text 3 appears */
-  .fromTo(subtitle3, textDuration, {opacity: 0, yPercent: 0 }, {opacity: 1, yPercent: 0, ease: Power1.easeOut}, textDelay)
+  .fromTo(subtitle3, textDuration, {opacity: 0}, {opacity: 1, ease: Power1.easeOut}, textDelay)
 
   /*Black block appears */
   .to(revealBlock, blockDuration, { ease: blockRevealEase, left: 0, xPercent: 0}, blockAppearingDelay)

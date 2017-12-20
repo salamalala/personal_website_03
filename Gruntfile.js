@@ -95,8 +95,11 @@ module.exports = function (grunt) {
                 files: ['_sass/**/*.{scss, sass}'],
                 tasks: ['sass']
             },
+            js: {
+                files: ['assets/src/main.js']
+            },
             jekyll: {
-                files: ['_layouts/*.html', '_includes/*.html', '_data/*.yml', '*.html', '_sass/**/*.{scss, sass}', '_includes/*.svg', 'assets/*.js'],
+                files: ['_layouts/*.html', '_includes/*.html', '_data/*.yml', '*.html', '_sass/**/*.{scss, sass}', '_includes/*.svg', 'assets/src/*.js', 'assets/dist/*.js'],
                 tasks: ['jekyll']
             }
         }
