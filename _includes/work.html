@@ -2,8 +2,11 @@
 
   <h1 class="home-section__title">work</h1>
 
+  <h2>Some examples of my work from the last few years</h2>
+
   <ul class="work__list">
   {% for project in site.data.projects %}
+
     <li class="work__item">
       <a class="work__link" href="{{ project.url }}" target="_blank">
         <div class="work__text">
@@ -16,6 +19,7 @@
         </div>
       </a>
     </li>
+
   {% endfor %}
   </ul>
 

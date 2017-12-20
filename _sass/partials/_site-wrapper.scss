@@ -3,6 +3,7 @@
   background-color: $turquois;
   transition: background-color 1.2s;
   overflow: hidden;
+  position: relative;
 
   @media #{$screen-md} {
     margin: 1.5em;
@@ -10,6 +11,28 @@
 
   @media #{$screen-lg} {
     margin: 2em;
+  }
+
+  &__language-link {
+    margin: 0;
+    position: fixed;
+    top: 50%;
+    left: -1em;
+    transform: rotate(-90deg);
+    color: $turquois;
+    font-size: $font-size-sm;
+    letter-spacing: $letter-spacing-lg;
+  }
+
+  &__contact-link {
+    margin: 0;
+    position: fixed;
+    top: 50%;
+    right: -1em;
+    transform: rotate(90deg);
+    color: $turquois;
+    font-size: $font-size-sm;
+    letter-spacing: $letter-spacing-lg;
   }
 
   &__work {

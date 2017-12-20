@@ -57,6 +57,10 @@
       transform: translateX(0);
     }
 
+    &:hover .work__technology:before {
+      transform: translateX(-15px);
+    }
+
     &:hover .work__client,
     &:focus .work__client {
       color: $dark-grey;
@@ -116,10 +120,10 @@
     &:before {
       content: '';
       position: absolute;
-      top: -20px;
-      left: 10px;
+      top: -22px;
+      left: 40px;
       background-color: $white;
-      height: 2px;
+      height: 4px;
       width: 200px;
     }
   }
