@@ -49,6 +49,7 @@ module.exports = function (grunt) {
             dist: {
                 files: {
                   'assets/main-min.js': [
+                    'node_modules/smoothscroll-polyfill/dist/smoothscroll.min.js',
                     'assets/main.js'
                     ]
                 }

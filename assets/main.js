@@ -1,3 +1,5 @@
+// Site Wrapper Background Animation
+
 function AnimationBackground() {
     this.controller = new ScrollMagic.Controller({
       globalSceneOptions: {triggerHook: 0.5}
@@ -28,12 +30,83 @@ AnimationBackground.prototype = {
 
 var animationBackground = new AnimationBackground();
 
+
+//call instance of AnimationBackground;
+  animationBackground
+    .createAnimation("site-wrapper__work", {
+      scene: {
+        options: {
+          triggerElement: ".work"
+        }
+      }
+    })
+    .createAnimation("site-wrapper__services", {
+      scene: {
+        options: {
+          triggerElement: ".services"
+        }
+      }
+    })
+    .createAnimation("site-wrapper__about", {
+      scene: {
+        options: {
+          triggerElement: ".about"
+        }
+      }
+    })
+
+    .createAnimation("site-wrapper__contact", {
+      scene: {
+        options: {
+          triggerElement: ".contact"
+        }
+      }
+    });
+
+
+
+
+// Smooth navigation scrolling
+
+var smoothScrolling = function (){
+
+  //make an array
+  const navLinks = [].slice.call(document.querySelectorAll('.nav__link'));
+
+  //loop through array on each element when clicked
+
+  navLinks.forEach(navLink => navLink.addEventListener('click', function(e){
+    e.preventDefault();
+
+    var target = this.getAttribute('href');
+
+    document.querySelector(target).scrollIntoView({
+      behavior: 'smooth',
+      block: "start"
+    });
+
+  }));
+}
+
+
+
+
+
+
+
+
+
+
+
+// Intro block revealer effect
+
+
 var tl = new TimelineMax({repeat: -1}),
     blockDuration = 0.3,
     blockAppearingDelay = "+=2",
-    blockMovingDelay = "+=0.2",
-    textDelay = "-=0.1",
-    textDuration = 0.4,
+    blockMovingDelay = "+=0.3",
+    textDelay = "-=0.2",
+    textDuration = 0.2,
     textEase = Expo.easeOut,
     blockRevealEase = Power1.easeIn,
     blockDisappearsEase = Power1.easeIn
@@ -45,7 +118,7 @@ var tl = new TimelineMax({repeat: -1}),
 
 tl
    /* Text 1 appears */
-  .fromTo(subtitle1, textDuration, {opacity: 0, scale: 0.6, transformOrigin: "60% 0%"}, {opacity: 1, scale: 1, ease: textEase}, textDelay)
+  .fromTo(subtitle1, textDuration, {opacity: 0, yPercent: -200 }, {opacity: 1, yPercent: 0, ease: Power1.easeOut}, textDelay)
   //
   /*Black block appears */
   .to(revealBlock, blockDuration, { ease: blockRevealEase, left: 0}, blockAppearingDelay)
@@ -60,7 +133,7 @@ tl
   .set(revealBlock, { xPercent: -100})
 
   // /* Text 2 appears */
-  .fromTo(subtitle2, textDuration, {opacity: 0, scale: 0.6, transformOrigin: "60% 0%"}, {opacity: 1, scale: 1, ease: textEase}, textDelay)
+  .fromTo(subtitle2, textDuration, {opacity: 0, yPercent: 0 }, {opacity: 1, yPercent: 0, ease: Power1.easeOut}, textDelay)
 
   /*Black block appears */
   .to(revealBlock, blockDuration, { ease: blockRevealEase, left: 0, xPercent: 0}, blockAppearingDelay)
@@ -75,7 +148,7 @@ tl
   .set(revealBlock, { xPercent: -100})
 
   // /* Text 3 appears */
-  .fromTo(subtitle3, textDuration, {opacity: 0, scale: 0.6, transformOrigin: "60% 0%"}, {opacity: 1, scale: 1, ease: textEase}, textDelay)
+  .fromTo(subtitle3, textDuration, {opacity: 0, yPercent: 0 }, {opacity: 1, yPercent: 0, ease: Power1.easeOut}, textDelay)
 
   /*Black block appears */
   .to(revealBlock, blockDuration, { ease: blockRevealEase, left: 0, xPercent: 0}, blockAppearingDelay)
@@ -89,39 +162,7 @@ tl
 
 
 
-//js $(document).ready function in js
-document.addEventListener("DOMContentLoaded", function(event) {
 
-  //call instance of AnimationBackground;
-    animationBackground
-      .createAnimation("site-wrapper__work", {
-        scene: {
-          options: {
-            triggerElement: ".work"
-          }
-        }
-      })
-      .createAnimation("site-wrapper__services", {
-        scene: {
-          options: {
-            triggerElement: ".services"
-          }
-        }
-      })
-      .createAnimation("site-wrapper__about", {
-        scene: {
-          options: {
-            triggerElement: ".about"
-          }
-        }
-      })
+// calling all the functions:
 
-      .createAnimation("site-wrapper__contact", {
-        scene: {
-          options: {
-            triggerElement: ".contact"
-          }
-        }
-      });
-
-});
+smoothScrolling();

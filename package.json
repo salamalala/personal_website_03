@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "grunt-contrib-uglify": "^3.2.1",
+    "smoothscroll-polyfill": "^0.4.0"
+  },
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-browser-sync": "^2.2.0",
     "grunt-concurrent": "^2.3.1",
-    "grunt-contrib-uglify": "^3.0.1",
+    "grunt-contrib-uglify": "git://github.com/gruntjs/grunt-contrib-uglify.git#harmony",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-jekyll": "^0.4.6",
     "grunt-postcss": "^0.8.0",
