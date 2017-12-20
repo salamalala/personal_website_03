@@ -22,7 +22,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 files: {
-                    'assets/main.css': '_sass/main.scss'
+                    'assets/src/main.css': '_sass/main.scss'
                 }
             }
         },
@@ -40,17 +40,31 @@ module.exports = function (grunt) {
             },
             dist: {
                 files: {
-                    'assets/main-min.css': 'assets/main.css'
+                    'assets/dist/main-min.css': 'assets/src/main.css'
                 }
             }
         },
 
+        //transpiles es6 to es5
+        babel: {
+            options: {
+                sourceMap: true,
+                presets: ['env']
+            },
+            dist: {
+                files: {
+                  'assets/src/main-transpiled.js': 'assets/src/main.js'
+                }
+            }
+        },
+
+        //minifying and concatinating
         uglify: {
             dist: {
                 files: {
-                  'assets/main-min.js': [
+                  'assets/dist/main-min.js': [
                     'node_modules/smoothscroll-polyfill/dist/smoothscroll.min.js',
-                    'assets/main.js'
+                    'assets/src/main-transpiled.js'
                     ]
                 }
             }
@@ -79,35 +93,25 @@ module.exports = function (grunt) {
         watch: {
             sass: {
                 files: ['_sass/**/*.{scss, sass}'],
-                tasks: ['sass', 'postcss']
-            },
-            js: {
-                files: ['assets/main.js'],
-                tasks: ['uglify']
+                tasks: ['sass']
             },
             jekyll: {
                 files: ['_layouts/*.html', '_includes/*.html', '_data/*.yml', '*.html', '_sass/**/*.{scss, sass}', '_includes/*.svg', 'assets/*.js'],
                 tasks: ['jekyll']
             }
-        },
-
-        // run tasks in parallel
-        concurrent: {
-            serve: [
-                'sass',
-                'postcss',
-                'uglify'
-        ],
-        options: {
-            logConcurrentOutput: true
         }
-    }
 
     });
 
     // Register the grunt serve task
-    grunt.registerTask('default', [
-        'concurrent:serve', 'jekyll', 'browserSync', 'watch'
-    ]);
+    grunt.registerTask('dev', ['jekyll', 'sass', 'browserSync', 'watch']);
+
+    //setting jekyll variable to production in order to serve different asset files
+    grunt.registerTask('jekyll-production', function() {
+     grunt.log.writeln('Setting environment variable JEKYLL_ENV=production');
+     process.env.JEKYLL_ENV = 'production';
+    });
+
+    grunt.registerTask('prod', ['jekyll-production', 'jekyll', 'sass', 'postcss', 'uglify', 'babel', 'browserSync', 'watch' ]);
 
 };
