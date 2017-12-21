@@ -21,9 +21,8 @@
     align-items: center;
     position: relative;
     z-index: 1;
-    padding-top: $spacing-md;
-    padding-bottom: $spacing-md;
     padding-left: 4em;
+    transition: all 0.4s ease-out;
 
     &:after {
       content: '';
@@ -36,6 +35,12 @@
       height: 100%;
       background: linear-gradient(45deg, transparentize($purple, 0.3), transparentize($light-grey, 0.3));
       transition: all 0.4s ease-out;
+    }
+
+    &:hover,
+    &:focus {
+      padding-top: $spacing-md;
+      padding-bottom: $spacing-md;
     }
 
     &:hover:after,
@@ -122,7 +127,7 @@
 
   &__type {
     text-transform: uppercase;
-    margin-bottom: $spacing-sm;
+    margin-bottom: $spacing-md;
     font-size: $font-size-sm;
     font-family: $secondary-font;
     letter-spacing: $letter-spacing-lg;

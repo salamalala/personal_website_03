@@ -4,6 +4,7 @@
   padding-left: 1em;
   padding-right: 1em;
   padding-bottom: $spacing-xl;
+  margin-top: $spacing-xl;
   position: relative;
 
   @media #{$screen-md} {
@@ -21,13 +22,15 @@
     position: absolute;
     line-height: 0.8;
     font-size: 20vw;
-    top: -7.5vw;
+    top: -5vw;
     right: -2vw;
-    color: transparentize($white, 0.7);
+    color: transparentize($white, 0.8);
   }
 
   &__subtitle {
     font-size: $font-size-xl;
+    font-weight: 700;
+    margin-bottom: $spacing-md;
   }
 
 }
