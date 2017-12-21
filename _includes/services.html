@@ -3,16 +3,19 @@
     <h1 class="section__title">services</h1>
 
     <h2 class="section__subtitle">I'm here to help you create a visually attractive & user friendly web* presence</h2>
-    <p>*or print</p>
+    <p class="services__footnote">*or print</p>
 
-  <ul class="services__list">
-    {% for service in site.data.services %}
-    <li class="services__list-item">
-      <span class="services__number">{{service.number}}</span>
-      <p class="services__type">{{ service.type }}</p>
-      <p class="services__description">{{ service.description }}</p>
-    </li>
-    {% endfor %}
-  </ul>
+    <div class="section__main">
+      <ul class="services__list">
+        {% for service in site.data.services %}
+        <li class="services__list-item">
+          <span class="services__number">{{service.number}}</span>
+          <p class="services__type">{{ service.type }}</p>
+          <p class="services__description">{{ service.description }}</p>
+          <p class="services__description">{{ service.tools }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
 
 </section>

@@ -501,7 +501,6 @@ a {
   margin-top: 9.9687612606em;
   font-family: "letter-gothic-std", sans-serif;
   padding: 0.5627813555em 1.776889em;
-  font-size: 0.5627813555em;
   text-align: center;
   margin: 1em; }
   @media (min-width: 48em) {
@@ -537,8 +536,9 @@ a {
     color: rgba(253, 253, 253, 0.2); }
   .section__subtitle {
     font-size: 2.368593037em;
-    font-weight: 700;
-    margin-bottom: 1.776889em; }
+    font-weight: 700; }
+  .section__main {
+    margin-top: 2.368593037em; }
 
 .intro {
   height: calc(100vh - 10em);
@@ -762,6 +762,9 @@ a {
 .services {
   display: flex;
   flex-direction: column; }
+  .services__footnote {
+    font-family: "letter-gothic-std", sans-serif;
+    text-align: right; }
   .services__list {
     list-style: none;
     padding-left: 0;
@@ -769,17 +772,12 @@ a {
     display: flex;
     justify-content: space-between; }
   .services__list-item {
-    width: 27%;
-    max-width: 27%;
+    width: 34%;
     display: flex;
     flex-direction: column; }
-    .services__list-item:nth-child(2) {
-      margin-top: 1.776889em; }
     .services__list-item:last-child {
-      margin-top: 3.1573345183em; }
+      width: 24%; }
   .services__number {
-    display: block;
-    text-align: right;
     display: block;
     position: relative;
     color: #ffd751;
@@ -794,14 +792,14 @@ a {
       height: 5px;
       background-color: #ffd751; }
   .services__type {
-    text-align: right;
     font-family: "letter-gothic-std", sans-serif;
     font-size: 1em;
     margin: 0;
     text-transform: uppercase;
     color: #ffd751; }
   .services__description {
-    color: #FDFDFD; }
+    color: #FDFDFD;
+    margin-bottom: 0; }
 
 .about__header {
   display: inline-block;
@@ -824,9 +822,6 @@ a {
 .contact {
   display: flex;
   flex-direction: column; }
-  .contact__wrapper {
-    display: flex;
-    justify-content: space-between; }
   .contact__msg {
     width: 55%;
     text-align: center; }

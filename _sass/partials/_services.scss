@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
 
+  &__footnote {
+    font-family: $secondary-font;
+    text-align: right;
+  }
+
   &__list {
     list-style: none;
     padding-left: 0;
@@ -11,23 +16,16 @@
   }
 
   &__list-item {
-    width: 27%;
-    max-width: 27%;
+    width: 34%;
     display: flex;
     flex-direction: column;
 
-    &:nth-child(2) {
-      margin-top: $spacing-md;
-    }
-
     &:last-child {
-      margin-top: $spacing-xl;
+      width: 24%;
     }
   }
 
   &__number {
-    display: block;
-    text-align: right;
     display: block;
     position: relative;
     color: $yellow-strong;
@@ -46,7 +44,6 @@
   }
 
   &__type {
-    text-align: right;
     font-family: $secondary-font;
     font-size: $font-size-base;
     margin: 0;
@@ -56,6 +53,7 @@
 
   &__description {
     color: $white;
+    margin-bottom: 0;
   }
 
 }

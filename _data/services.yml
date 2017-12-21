@@ -1,14 +1,15 @@
 - number: "01"
   type: Web Developement
-  description: "I build websites, mainly custom WordPress themes if you wish to edit and publish content yourself or Jekyll themes if you have static content.
-  My focus is on Front-End, HTML5, CSS3, Sass and Javasript. But I also don't faint using PHP or Ruby."
+  description: I build responsive websites which are fast, robust and are easily maintainable. For that I create custom WordPress themes or a static Jekyll site if you have a website which doesn't need a lot of content updates.
+  tools: I'm happy to work with the following tools and languages. HTML5, CSS3 / Sass, Javascript, Grunt, Bower, jQuery, Vue.js, PHP, Ruby, MySQL, Git and Github.
+
 
 - number: "02"
   type: Web Design
-  description: "If you don't have a design for the site yet I can create your Web Presence.
-  We think together about the best possible structure for the site, choose the colors and fonts and based on that I'll design a possible Website for you.
-  Or two. Or three.."
+  description: "I like to create clean aesthetically pleasing designs which drive users to take action. There are different ways to do so: I create Web Designs from scratch or use style guides to adapt it into a Web Design."
+  tools: To create my designs I use Sketch, Adobe Software and Codepen.
+
 
 - number: "03"
-  type: Branding / Print Design
-  description: "Although digital design is where I spend the majority of my time, I also have experience with branding and identity; print design "
+  type: Print Design
+  description: Although digital design is where I spend the majority of my time in, I also have experience with branding and print design. My offers  range from a new logo, to a flyer to promote a local Flea Market or a printed booklet for your organisations annual report.

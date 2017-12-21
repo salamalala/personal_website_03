@@ -4,24 +4,26 @@
 
   <h2 class="section__subtitle">Here you find a selection of projects I worked on over the last few years</h2>
 
-  <ul class="work__list">
-  {% for project in site.data.projects %}
+  <div class="section__main">
+    <ul class="work__list">
+    {% for project in site.data.projects %}
 
-    <li class="work__item">
-      <a class="work__link" href="{{ project.url }}" target="_blank">
-        <div class="work__text">
-          <span class="work__type">{{ project.type }}</span>
-          <span class="work__client">{{ project.client }}</span>
-          <span class="work__technology">{{ project.technology }}</span>
-          <span class="work__description">{{ project.description }}</span>
-        </div>
-        <div class="work__img-wrapper">
-          <img class="work__img" src="assets/img/{{ project.img }}" alt="{{ project.name }}">
-        </div>
-      </a>
-    </li>
+      <li class="work__item">
+        <a class="work__link" href="{{ project.url }}" target="_blank">
+          <div class="work__text">
+            <span class="work__type">{{ project.type }}</span>
+            <span class="work__client">{{ project.client }}</span>
+            <span class="work__technology">{{ project.technology }}</span>
+            <span class="work__description">{{ project.description }}</span>
+          </div>
+          <div class="work__img-wrapper">
+            <img class="work__img" src="assets/img/{{ project.img }}" alt="{{ project.name }}">
+          </div>
+        </a>
+      </li>
 
-  {% endfor %}
-  </ul>
+    {% endfor %}
+    </ul>
+  </div>
 
 </section>

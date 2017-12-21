@@ -2,11 +2,6 @@
   display: flex;
   flex-direction: column;
 
-  &__wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-
   &__msg {
     width: 55%;
     text-align: center;
