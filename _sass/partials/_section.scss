@@ -1,8 +1,10 @@
-.home-section {
+.section {
   min-height: calc(100vh - 5em);
   margin-bottom: $spacing-base;
   padding-left: 1em;
   padding-right: 1em;
+  padding-bottom: $spacing-xl;
+  position: relative;
 
   @media #{$screen-md} {
     margin-bottom: $spacing-md;
@@ -16,23 +18,16 @@
   }
 
   &__title {
-    text-align: right;
+    position: absolute;
+    line-height: 0.8;
+    font-size: 20vw;
+    top: -7.5vw;
+    right: -2vw;
+    color: transparentize($white, 0.7);
   }
 
   &__subtitle {
-    position: relative;
-    padding-left: 16%;
-    margin-top: $spacing-lg;
-    margin-bottom: $spacing-base;
-
-    &:before {
-      content: '';
-      position: absolute;
-      width: 4px;
-      height: 100%;
-      top: 0;
-      left: 8%;
-      background-color: $white;
-    }
+    font-size: $font-size-xl;
   }
+
 }

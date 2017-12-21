@@ -2,10 +2,6 @@
   display: flex;
   flex-direction: column;
 
-  &__title {
-    color: $turquois-strong;
-  }
-
   &__list {
     list-style: none;
     padding-left: 0;
@@ -15,10 +11,18 @@
   }
 
   &__list-item {
-    width: 29%;
-    max-width: 29%;
+    width: 27%;
+    max-width: 27%;
     display: flex;
     flex-direction: column;
+
+    &:nth-child(2) {
+      margin-top: $spacing-md;
+    }
+
+    &:last-child {
+      margin-top: $spacing-xl;
+    }
   }
 
   &__number {
@@ -26,8 +30,8 @@
     text-align: right;
     display: block;
     position: relative;
-    color: $turquois-strong;
-    font-size: $font-size-xxxl;
+    color: $yellow-strong;
+    font-size: $font-size-xxl;
     font-family: $secondary-font;
 
     &:after {
@@ -37,17 +41,17 @@
       left: 0;
       width: 100%;
       height: 2px;
-      background-color: $turquois-strong;
+      background-color: $yellow-strong;
     }
   }
 
   &__type {
     text-align: right;
-    flex-grow: 2;
     font-family: $secondary-font;
     font-size: $font-size-base;
+    margin: 0;
     text-transform: uppercase;
-    color: $turquois-strong;
+    color: $yellow-strong;
   }
 
   &__description {
