@@ -55,13 +55,13 @@
   &__type {
     position: relative;
     font-family: $secondary-font;
-    font-size: $font-size-lg;
+    font-size: $font-size-xxxl;
     display: block;
     text-transform: uppercase;
     transition: $hover-transition;
 
     @screen #{$screen-md} {
-      font-size: $font-size-xl;
+      font-size: $font-size-xxxl;
     }
   }
 }

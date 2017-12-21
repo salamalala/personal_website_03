@@ -1,6 +1,6 @@
 // Typography
 $base-font: "futura-pt", sans-serif;
-//font-weight: 300/ 400 / 500
+//font-weight: 300/ 400 / 500 / 600 / 700
 $secondary-font: "letter-gothic-std", sans-serif;
 //font-weight: 400 / 700
 
@@ -16,11 +16,13 @@ $modularscale: (
   ratio: 1.333
 );
 
-$font-size-sm: ms(-1);
+$font-size-sm: ms(-2);
 $font-size-base: ms(0);
-$font-size-md: ms(3);
-$font-size-lg: ms(4);
-$font-size-xl: ms(5);
+$font-size-md: ms(1);
+$font-size-lg: ms(2);
+$font-size-xl: ms(3);
+$font-size-xxl: ms(4);
+$font-size-xxxl: ms(5);
 
 // Line height
 $base-line-height: 1.5;
@@ -39,9 +41,9 @@ $base-z-index: 0;
 $spacing-xs: ms(-2);
 $spacing-sm: ms(-1);
 $spacing-base: ms(0);
-$spacing-md: ms(1);
-$spacing-lg: ms(2);
-$spacing-xl: ms(3);
+$spacing-md: ms(2);
+$spacing-lg: ms(3);
+$spacing-xl: ms(4);
 $spacing-xxl: ms(8);
 
 //Media queries

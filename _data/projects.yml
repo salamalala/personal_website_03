@@ -1,7 +1,8 @@
-- client: GSoA
+- client: WordPress Template Louise
   url: http://gsoa.ch
-  technology: Custom WordPress Theme built with HTML5 / Scss / Javascript / PHP
+  technology:  "Tools used: HTML5 / Scss / Javascript / PHP"
   type: Design | Development
+  description: This swiss peace organisation was in need for a highly flexible template adaptable for different campaigns. The template offers different layout possibilities for the home page, posts and different color schemes plus events, blog, media releases.
   img: gsoa-fullpage.jpg
 
 - client: Glaubenssache Online

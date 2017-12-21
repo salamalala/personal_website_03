@@ -1,5 +1,7 @@
 html {
   font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: $letter-spacing-base;
 }
 
 body {
@@ -16,11 +18,11 @@ h3 {
 }
 
 h1 {
-  font-size: $font-size-lg;
+  font-size: $font-size-xl;
   font-weight: 700;
 
   @media #{$screen-md} {
-    font-size: $font-size-xl;
+    font-size: $font-size-xxl;
   }
 }
 

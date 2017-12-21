@@ -17,10 +17,22 @@
 
   &__title {
     text-align: right;
-    margin-bottom: $spacing-sm;
+  }
 
-    @media #{$screen-md} {
-      margin-bottom: $spacing-base;
+  &__subtitle {
+    position: relative;
+    padding-left: 16%;
+    margin-top: $spacing-lg;
+    margin-bottom: $spacing-base;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: 100%;
+      top: 0;
+      left: 8%;
+      background-color: $white;
     }
   }
 }

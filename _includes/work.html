@@ -2,7 +2,7 @@
 
   <h1 class="home-section__title">work</h1>
 
-  <h2>Some examples of my work from the last few years</h2>
+  <h2 class="home-section__subtitle">A selection of projects from the last few years</h2>
 
   <ul class="work__list">
   {% for project in site.data.projects %}
@@ -11,8 +11,9 @@
       <a class="work__link" href="{{ project.url }}" target="_blank">
         <div class="work__text">
           <span class="work__type">{{ project.type }}</span>
-          <span class="work__technology">{{ project.technology }}</span>
           <span class="work__client">{{ project.client }}</span>
+          <span class="work__technology">{{ project.technology }}</span>
+          <span class="work__description">{{ project.description }}</span>
         </div>
         <div class="work__img-wrapper">
           <img class="work__img" src="assets/img/{{ project.img }}" alt="{{ project.name }}">
