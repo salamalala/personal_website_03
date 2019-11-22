@@ -1,29 +1,40 @@
 {
-  "name": "nina-redesign-17",
+  "name": "ninaregli",
   "version": "1.0.0",
-  "description": "",
+  "description": "Portfolio Site",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/salamalala/personal_website_03.git"
+  },
   "main": "index.js",
-  "dependencies": {
-    "grunt-contrib-uglify": "^3.2.1",
-    "smoothscroll-polyfill": "^0.4.0"
-  },
-  "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
-    "grunt": "^1.0.1",
-    "grunt-babel": "^7.0.0",
-    "grunt-browser-sync": "^2.2.0",
-    "grunt-contrib-uglify": "git://github.com/gruntjs/grunt-contrib-uglify.git#harmony",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-jekyll": "^0.4.6",
-    "grunt-postcss": "^0.8.0",
-    "grunt-sass": "^2.0.0",
-    "load-grunt-tasks": "^3.5.2"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nina Regli",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "browser-sync": "^2.26.7",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-minify": "^3.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-shell": "^0.7.1",
+    "gulp-sourcemaps": "^2.6.5",
+    "lodash": "^4.17.15",
+    "postcss-easy-import": "^3.0.0"
+  },
+  "browserslist": [
+    "ie 11",
+    "> 1%",
+    "last 4 versions"
+  ],
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }
